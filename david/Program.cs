@@ -11,6 +11,6 @@ string school_grade = "3rd_Primary";
 Console.WriteLine(
     "Your Name is :" + name + "\n" +
     "your first character:" + first_character + "\n" +
-    "Your Age is :" + age + " Years Old"
-    "your height is: "+height
+    "Your Age is :" + age + " Years Old" + "\n" +
+    "your height is: "+height + " " +"meter"
     );
