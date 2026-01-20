@@ -30,6 +30,8 @@ string full_name = "David Abanoub Boshra";
 int a = 5;
 int b = 9;
 
+
+// if statement
 // == != > < >= <= || &&
 
 /*
@@ -90,21 +92,42 @@ else
 {
     Console.WriteLine("Unauthorized, Please Check your Credentials");
 }
+
+for (int x = 0; x < 2; x++)
+{
+    // this code is to authenticate the user
+    Console.WriteLine("Please enter your Name");
+    string myName = Console.ReadLine();
+    Console.WriteLine("Please enter your Pass");
+    string myPass = Console.ReadLine();
+
+    Console.ReadLine();
+
+    if (myName == "David@gmail.com" && myPass == "1234")
+        Console.WriteLine("Welcome Back David");
+    else
+        Console.WriteLine("Unauthorized, Please Check your Credentials");
+}
 */
 
-// this code is to authenticate the user
-Console.WriteLine("Please enter your Name");
-string myName = Console.ReadLine();
-Console.WriteLine("Please enter your Pass");
-string myPass = Console.ReadLine();
+// Loops
+
+// 1- for loop
+// part 1: start, part2 :condition, part3: step
+
+int condition = 5;
+int counter;
 
 
-Console.ReadLine();
-
-if (myName == "David@gmail.com" && myPass == "1234")
-    Console.WriteLine("Welcome Back David");
-else
-    Console.WriteLine("Unauthorized, Please Check your Credentials");
+string[] family = ["Abanoub", "Reham", "David", "Jonathan"];
+int[] numbers   = [1, 3, 4, 5, -1];
 
 
+for (counter = 0; counter < condition; counter++)
+    Console.WriteLine(counter);
 
+for (counter = 0; counter < family.Length; counter++)
+    Console.WriteLine(family[counter]);
+
+for (counter = 0; counter <= numbers.Length; counter++)
+    Console.WriteLine(numbers[counter]);
