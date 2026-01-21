@@ -122,12 +122,35 @@ int counter;
 string[] family = ["Abanoub", "Reham", "David", "Jonathan"];
 int[] numbers   = [1, 3, 4, 5, -1];
 
-
+/*
 for (counter = 0; counter < condition; counter++)
     Console.WriteLine(counter);
 
 for (counter = 0; counter < family.Length; counter++)
     Console.WriteLine(family[counter]);
 
-for (counter = 0; counter <= numbers.Length; counter++)
+for (counter = 0; counter < numbers.Length; counter++)
     Console.WriteLine(numbers[counter]);
+*/
+
+string myName = "Reham Ragaye Naguib";
+string label = "My Name IS:";
+string newLine = "\n";
+Console.WriteLine(label + newLine +  myName);
+
+string? x;
+string? y;
+for (int p = 0; p < 4; p++) 
+{
+    Console.WriteLine("Please enter first name to add");
+    x = Console.ReadLine();
+    Console.WriteLine("Please enter second name to add");
+    y = Console.ReadLine();
+    Console.ReadLine();
+
+    void Sum(string x, string y)
+    {
+        Console.WriteLine("Full Name = " + x + " " + y + "\n");
+    }
+    Sum(x, y);
+}
