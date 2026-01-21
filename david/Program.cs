@@ -1,6 +1,6 @@
 ﻿using System;
 // See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, David!");
+Console.WriteLine("Hello, David!");
 
 /*
 string name = "david abanoub anis";
@@ -108,7 +108,7 @@ for (int x = 0; x < 2; x++)
     else
         Console.WriteLine("Unauthorized, Please Check your Credentials");
 }
-*/
+
 
 // Loops
 
@@ -131,7 +131,6 @@ for (counter = 0; counter < family.Length; counter++)
 
 for (counter = 0; counter < numbers.Length; counter++)
     Console.WriteLine(numbers[counter]);
-*/
 
 string myName = "Reham Ragaye Naguib";
 string label = "My Name IS:";
@@ -154,3 +153,35 @@ for (int p = 0; p < 4; p++)
     }
     Sum(x, y);
 }
+*/
+
+float num1, num2, result;
+
+string operation="";
+
+while (operation != "off")
+{
+   Console.WriteLine("Please Enter first Number");
+   num1 = float.Parse(Console.ReadLine());
+
+    operation = Console.ReadLine();
+
+   Console.WriteLine("Please Enter second Number");
+   num2 = float.Parse(Console.ReadLine());
+
+   
+    if (operation == "+" || operation == "add")
+    {
+        result = num1 + num2;
+        Console.WriteLine("Sum = " + result);
+    }
+    else if (operation == "-" || operation == "sub")
+    {
+        result = num1 - num2;
+        Console.WriteLine("Subtraction = " + result);
+    }
+    
+    if(operation == "off")
+    break;
+}
+
